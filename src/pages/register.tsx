@@ -13,7 +13,7 @@ export default function Register(){
     const { data, isLoading } = useQuery({
         queryFn: getUser,
         queryKey: ['user'],
-        retry: 2,
+        retry: 0,
         refetchOnWindowFocus: false
     });
 
