@@ -74,10 +74,12 @@ export default function Profile() {
                 {errors.handle && <Error>{errors.handle.message}</Error>}
             </div>
 
-            <div className="flex flex-col gap-2">
-                <label htmlFor="description">Descripción:</label>
+            <div className="grid grid-cols-1 gap-2">
+                <label
+                    htmlFor="description"
+                >Descripción:</label>
                 <textarea
-                    className="w-full border-none bg-slate-100 rounded-lg p-2 resize-y"
+                    className="border-none bg-slate-100 rounded-lg p-2"
                     placeholder="Tu Descripción"
                     {...register('description')}
                 />

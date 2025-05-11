@@ -79,9 +79,9 @@ export default function DevTree({data}: DevTreeProps){
                                     className="mx-auto max-w-[250px]"
                                 />
                             }
-
+                            
                             {data.description &&
-                                <p className="text-center text-lg font-black text-white">
+                                <p className="text-center text-lg font-black text-white break-words whitespace-pre-wrap">
                                     {data.description}
                                 </p>
                             }
